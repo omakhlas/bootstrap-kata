@@ -3,8 +3,8 @@ jdk:
   - openjdk8
 before_install:
   - chmod +x mvnw
-script: ./mvnw clean install
+script: mvn clean install
 jobs:
   include:
     - stage: Test
-      script: ./mvnw clean test 
+      script: mvn clean test 
